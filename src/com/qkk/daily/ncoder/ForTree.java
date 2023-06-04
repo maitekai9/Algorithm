@@ -76,4 +76,21 @@ public class ForTree {
         }
         return res;
     }
+
+    public List<Integer> bfs(TreeNode root) {
+        List<Integer> res = new ArrayList<>();
+        LinkedList<TreeNode> queue = new LinkedList<>();
+        queue.add(root);
+        while (!queue.isEmpty()) {
+            TreeNode cur = queue.pop();
+            res.add(cur.getVal());
+            if (cur.getLeft() != null) {
+                queue.add(cur.getLeft());
+            }
+            if (cur.getRight() != null) {
+                queue.add(cur.getRight());
+            }
+        }
+        return res;
+    }
 }
