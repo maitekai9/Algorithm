@@ -1,5 +1,6 @@
 package com.qkk.daily.ncoder;
 
+import java.util.*;
 import java.util.regex.Pattern;
 
 /**
@@ -17,6 +18,14 @@ public class TestPattern {
     }
 
     public static void main(String[] args) {
-
+//        int n = 5;
+//        int tem = n - 1;
+//        tem |= tem >>> 1;
+//        tem |= tem >>> 2;
+//        tem |= tem >>> 4;
+//        tem |= tem >>> 8;
+//        tem |= tem >>> 16;
+//        System.out.println(tem + 1);
+        System.out.println((long) Math.ceil(Math.log10(110)));
     }
 }

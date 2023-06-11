@@ -14,7 +14,7 @@ import java.util.List;
  */
 public class Permutation {
     public static void getPermutation() {
-        String s = "aba";
+        String s = "123456789";
         char[] chars = s.toCharArray();
         Arrays.sort(chars);
         int n = chars.length;
@@ -26,6 +26,7 @@ public class Permutation {
             System.out.print(list.get(0));
             System.out.print(list.get(1));
             System.out.print(list.get(2));
+            System.out.print(list.get(3));
             System.out.println();
         }
     }

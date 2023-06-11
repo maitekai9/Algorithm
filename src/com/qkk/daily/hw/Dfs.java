@@ -3,6 +3,7 @@ package com.qkk.daily.hw;
 import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 /**
  * @ClassName Dfs.java
@@ -20,6 +21,9 @@ public class Dfs {
         boolean[] used = new boolean[s1.length];
         ArrayDeque<String> deque = new ArrayDeque<>();
         dfs1(s1, 0, deque, list, used);
+        for (List<String> li: list) {
+            System.out.println(Arrays.asList(li.toArray(new String[0])));
+        }
     }
 
     public static void dfs1(String[] arr, int depth,

@@ -1,5 +1,7 @@
 package com.qkk.daily.ncoder;
 
+import java.util.Scanner;
+
 /**
  * @ClassName CommonStr.java
  * @Author Maitekai
@@ -26,5 +28,12 @@ public class CommonStr {
             }
         }
         return s1.substring(index, max + index);
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int i = sc.nextInt();
+        System.out.println(Integer.toHexString(i));
+        System.out.println(Integer.toBinaryString(Integer.parseInt(Integer.toHexString(i))));
     }
 }

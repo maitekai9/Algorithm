@@ -14,10 +14,10 @@ import java.util.regex.Pattern;
 public class GetPosition {
     public static void getPosition() {
         String s = "a123(3,10)43fa(3,4)vwa(4,10)2qdf";
-        Pattern pattern = Pattern.compile("([\\d]*,[\\d]*)");
+        Pattern pattern = Pattern.compile("([\\d]*),([\\d]*)");
         Matcher matcher = pattern.matcher(s);
-        while (matcher.find()) {
-            System.out.println(matcher.group());
+        if (matcher.find()) {
+            System.out.println(matcher.end());
         }
     }
 

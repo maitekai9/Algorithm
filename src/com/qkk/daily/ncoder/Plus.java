@@ -1,6 +1,9 @@
 package com.qkk.daily.ncoder;
 
 import java.math.BigDecimal;
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
 
 /**
  * @ClassName Plus.java
@@ -16,5 +19,7 @@ public class Plus {
         BigDecimal bigDecimal = new BigDecimal(s1);
         BigDecimal bigDecimal1 = new BigDecimal(s2);
         System.out.println(bigDecimal.add(bigDecimal1));
+        List<Integer> list = new ArrayList<>();
+        list.sort(Comparator.comparingInt(o -> o));
     }
 }
