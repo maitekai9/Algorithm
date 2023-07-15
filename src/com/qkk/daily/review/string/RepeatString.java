@@ -1,5 +1,7 @@
 package com.qkk.daily.review.string;
 
+import java.util.Arrays;
+
 /**
  * @ClassName RepeatString.java
  * @Author Maitekai
@@ -42,7 +44,29 @@ public class RepeatString {
         }
     }
 
+    public static void repeatString(String s) {
+        int n = s.length();
+        int[] next = new int[n];
+        int j = -1;
+        next[0] = -1;
+        for (int i = 1; i < n; i++) {
+            while (j > 0 && s.charAt(i) != s.charAt(j + 1)) {
+                j = next[j];
+            }
+            if (s.charAt(i) == s.charAt(j + 1)) {
+                j++;
+            }
+            next[i] = j;
+        }
+        System.out.println(Arrays.toString(next));
+        if (next[n - 1] != -1 && n % (n - next[n - 1] - 1) == 0) {
+            System.out.println("true");
+            return;
+        }
+        System.out.println("false");
+    }
+
     public static void main(String[] args) {
-        getIndex("aabaabaafa", "aabaaf");
+        repeatString("aabaabaab");
     }
 }
