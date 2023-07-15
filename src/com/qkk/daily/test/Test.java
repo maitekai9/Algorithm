@@ -6,7 +6,9 @@ import java.io.InputStreamReader;
 import java.util.ArrayDeque;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.LinkedList;
 import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.locks.ReentrantLock;
 
 /**
  * @ClassName Test.java
@@ -22,8 +24,10 @@ public class Test {
 //        System.out.printf("%04d", 25);
 //        BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
 //        System.out.println(in.readLine());
-//        HashMap<String, String> map = new HashMap<>();
-//        map.put("1", "1");
-        System.out.println(Integer.toBinaryString(1));
+        HashMap<String, String> map = new HashMap<>();
+        map.put("1", "1");
+        map.remove("1");
+        LinkedList<Integer> list = new LinkedList<>();
+        list.add(1);
     }
 }
