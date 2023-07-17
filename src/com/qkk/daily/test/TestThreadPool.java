@@ -26,5 +26,6 @@ public class TestThreadPool {
 //        System.out.println("hei");
         ArrayList<Integer> list = new ArrayList<>();
         list.add(1);
+        System.out.println(list.get(0));
     }
 }
