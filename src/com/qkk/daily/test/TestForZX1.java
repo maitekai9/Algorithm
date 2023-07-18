@@ -92,7 +92,7 @@ public class TestForZX1 {
 
     public static void main(String[] args) {
         getResult("1=1");
-        getResult("2x=1+2x");
+        getResult("2=1");
         getResult("2a+6-2+a=8+2a-2");
         getResult("a=1");
         getResult("abc+1+2abc=2+2abc+1");
