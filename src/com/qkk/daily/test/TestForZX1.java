@@ -11,7 +11,7 @@ public class TestForZX1 {
         char[] chars = s.toCharArray();
         // 常数项和
         int[] digit = new int[1];
-        // key=变量，value=因数和
+        // key=变量，value=系数和
         Map<String, Integer> map = new HashMap<>();
         // 转化为ax + b = 0，flag转换符号
         int flag = 1;
@@ -33,7 +33,7 @@ public class TestForZX1 {
         System.out.println(digitNum);
         // 变量
         String var = null;
-        // 因数和
+        // 系数和
         int varNum = 0;
         for (Map.Entry<String,Integer> entry: map.entrySet()) {
             var = entry.getKey();
