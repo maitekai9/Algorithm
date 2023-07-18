@@ -18,6 +18,5 @@ public class CallableTest {
         FutureTask<Integer> future = new FutureTask<>(callable);
         new Thread(future).start();
         System.out.println(future.get());
-        ReentrantLock reentrantLock = new ReentrantLock();
     }
 }
